@@ -1,0 +1,23 @@
+﻿<Window x:Class="KazouInventaris.itemUitlenenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KazouInventaris"
+        mc:Ignorable="d"
+        Title="itemUitlenenWindow" Height="264" Width="334">
+    <Grid>
+        <Label Content="Item om uit te lenen: " HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="uitgeleendItemTextBox" IsEnabled="False" HorizontalAlignment="Left" Margin="142,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Naam:" HorizontalAlignment="Left" Margin="19,36,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="naamTextBox" HorizontalAlignment="Left" Margin="142,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Vakantiecode: " HorizontalAlignment="Left" Margin="19,62,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="vakantieCodeTextBox" Margin="142,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Aantal uitgeleend: " HorizontalAlignment="Left" Margin="19,88,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="142,92,0,0" TextWrapping="Wrap" Name="aantalTextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Aantal nog in stock" HorizontalAlignment="Left" Margin="19,114,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="stockTextBox" IsEnabled="False" Margin="142,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Sla op" Name="saveButton" HorizontalAlignment="Left" Margin="24,157,0,0" VerticalAlignment="Top" Height="67" Width="242" FontSize="36" FontFamily="Arial Black" Click="saveButton_Click"/>
+
+    </Grid>
+</Window>
